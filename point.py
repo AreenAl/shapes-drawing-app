@@ -1,7 +1,5 @@
 class Point:
     def __init__(self, x,y):
-        if x<0 or y<0:
-            raise Exception
         self.x=x
         self.y=y
 

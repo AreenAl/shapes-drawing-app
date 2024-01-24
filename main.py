@@ -29,10 +29,10 @@ def main():
     square = Square(Point(1, 2), Point(4, 5))
     print(square)
 
-    box = Box(Point(1, 2), Point(4, 6))
+    box = Box(Point(1, 2), Point(4, 6),3)
     print(box)
 
-    cube = Cube(Point(1, 2), Point(4, 6))
+    cube = Cube(Point(1, 2), Point(4, 6),3)
     print(cube)
 
 if __name__ == '__main__':

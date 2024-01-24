@@ -1,5 +1,7 @@
 class Rectangle:
     def __init__(self, top_left ,bottom_right):
+        if top_left.x<0 or top_left.y<0 or bottom_right.x>2240 or bottom_right.y>1080 :
+            raise ValueError
         self.top_left=top_left
         self.bottom_right=bottom_right
 

@@ -1,5 +1,8 @@
 # test_shapes.py
 import unittest
+
+import pytest as pytest
+
 from point import Point
 from rectangle import Rectangle
 from square import Square
@@ -46,6 +49,12 @@ class TestShapes(unittest.TestCase):
         self.assertEqual(rectangle.top_left.y, 4)
         self.assertEqual(rectangle.bottom_right.x, 200)
         self.assertEqual(rectangle.bottom_right.y, 130)
+
+    def test_rectangle_cordinats(self):
+        A=Point(-1, -1)
+        B=Point(-1, -1)
+        with pytest.raises(Exception) as e:
+            C=Rectangle(A,B)
 
     def test_move_shape_not_equal(self):
         rectangle = Rectangle(Point(3, 3), Point(100, 100))
